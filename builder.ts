@@ -76,8 +76,8 @@ export let builder = {
                             ... ['zh', 'en'].map(language => 
                                 ({ src: `node_modules/dolphindb/docs.${language}.json`, out: `docs.${language}.json` })),
                                 
-                            // 'dolphindb.language-configuration.json',
-                            // 'dolphindb-python.language-configuration.json'
+                            'connection.schema.json',
+                            'ui.schema.json'
                         ],
                     },
                     externals: {

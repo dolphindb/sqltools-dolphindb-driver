@@ -37,8 +37,8 @@ export async function activate (ctx: ExtensionContext): Promise<IDriverExtension
             
             driver_aliases.forEach(({ value }) => {
                 map.set(`driver/${value}/extension-id`, extension_id)
-                map.set(`driver/${value}/connection-schema`, ctx.asAbsolutePath('../connection.schema.json'))
-                map.set(`driver/${value}/ui-schema`, ctx.asAbsolutePath('../ui.schema.json'))
+                map.set(`driver/${value}/connection-schema`, ctx.asAbsolutePath('connection.schema.json'))
+                map.set(`driver/${value}/ui-schema`, ctx.asAbsolutePath('ui.schema.json'))
             })
             
             await extension.client.sendRequest('ls/RegisterPlugin', { path: ctx.asAbsolutePath('ls/plugin.cjs') })

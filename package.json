@@ -1,11 +1,14 @@
 {
-    "name": "dolphindb-vscode",
+    "name": "sqltools-dolphindb-driver",
+    "displayName": "SQLTools DolphinDB Driver",
+    "description": "SQLTools driver for DolphinDB",
     "type": "module",
-    "version": "3.0.200",
+    "version": "0.1.0",
+    "publisher": "dolphindb",
     "engines": {
         "vscode": ">=1.68.0"
     },
-    "main": "./out/extension.js",
+    "main": "./out/extension.cjs",
     "scripts": {
         "dev": "node --experimental-transform-types ./dev.ts",
         "build": "node --experimental-transform-types ./build.ts",
@@ -13,12 +16,20 @@
         "lint": "eslint \"**/*.{ts,tsx}\"",
         "fix": "eslint --fix \"**/*.{ts,tsx}\""
     },
+    "activationEvents": [
+        "*",
+        "onLanguage:sql",
+        "onCommand:sqltools.*"
+    ],
+    "extensionDependencies": [
+        "mtxr.sqltools"
+    ],
     "devDependencies": {
         "@types/koa": "^2.15.0",
         "@types/node": "^22.10.3",
         "@types/react": "^19.0.2",
         "@types/react-dom": "^19.0.2",
-        "@types/vscode": "^1.96.0",
+        "@types/vscode": "^1.68.0",
         "@types/ws": "^8.5.13",
         "eslint": "^9.17.0",
         "typescript": "^5.7.2"

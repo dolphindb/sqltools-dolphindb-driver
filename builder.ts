@@ -68,7 +68,7 @@ export let builder = {
                     },
                     assets: {
                         productions: [
-                            'README.md', 'icons/',
+                            'README.md', 'icons/', 'images/',
                             
                             // sqltools: 复制所需的资源
                             // '',
@@ -125,11 +125,11 @@ export let builder = {
         
         const package_json_ = {
             name,
-            displayName: 'SQLTools DolphinDB',
+            displayName: 'SQLTools DolphinDB Driver',
             
             type,
             
-            description: 'DolphinDB Driver For SQLTools for Visual Studio Code',
+            description: 'SQLTools driver for DolphinDB',
             
             version,
             
@@ -151,7 +151,7 @@ export let builder = {
             },
             
             publisher: 'dolphindb',
-            
+            extensionDependencies: ['mtxr.sqltools'],
             categories: ['Programming Languages', 'Other', 'Linters'],
             keywords: ['dolphindb', 'DolphinDB', 'DataBase', 'database', 'Time Series', 'timeseries', 'Programing Language'],
             homepage: 'https://github.com/dolphindb/vscode-extension/',

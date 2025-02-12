@@ -108,28 +108,3 @@ The results section is used to display the following:
 ### Query History Section
 
 The QUERY HISTORY on the left saves the query history for a specific connection.
-
-## Development Instructions
-
-```shell
-# Install pnpm package manager
-npm install -g pnpm
-
-# Install project dependencies
-pnpm install
-
-# Start development
-pnpm run dev
-
-# Format code and automatically fix code errors
-pnpm run fix
-
-# Scan entries
-pnpm run scan
-# Manually complete untranslated entries
-# Run scan again to update the dictionary file dict.json
-pnpm run scan
-
-# Build
-# pnpm run build
-```

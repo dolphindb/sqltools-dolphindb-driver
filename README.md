@@ -8,18 +8,18 @@ This package is part of [vscode-sqltools](https://vscode-sqltools.mteixeira.dev/
 ### Click the SQLTools Database Icon
 Click the SQLTools database icon to navigate to the connection configuration interface.
 
-<img src="images/add_connection.png" style="zoom:70%;" />
+<img src="./images/add_connection.png" style="zoom:70%;" />
 
 ### Select DolphinDB in the Driver Field
 In the "Select your database driver" field, select DolphinDB.
 
-<img src="images/select_driver.png" style="zoom:65%;" />
+<img src="./images/select_driver.png" style="zoom:65%;" />
 
 
 ### Configure Connection Information
 Fill in the connection details. Fields marked with an asterisk (*) are required. 
 
-<img src="images/connection_assistant.png" style="zoom:70%;" />
+<img src="./images/connection_assistant.png" style="zoom:70%;" />
 
 The configurations are as follows:
 
@@ -36,7 +36,7 @@ A custom string to identify different connections. It is recommended to use the 
 
 After configuring the connection, click the `TEST CONNECTION` button to verify if the connection is successful.
 
-<img src="images/test_connection.png" style="zoom:60%;" />
+<img src="./images/test_connection.png" style="zoom:60%;" />
 
 If the test is successful, click `SAVE CONNECTION` to save the connection information.
 
@@ -45,7 +45,7 @@ If the test is successful, click `SAVE CONNECTION` to save the connection inform
 
 After saving, the system will display basic connection information. Confirm that the details are correct.
 
-<img src="images/review_conn_details.png" style="zoom:50%;" />
+<img src="./images/review_conn_details.png" style="zoom:50%;" />
 
 Click `CONNECT NOW` to establish the connection and create a new SQL file for writing scripts.
 
@@ -53,7 +53,7 @@ Click `CONNECT NOW` to establish the connection and create a new SQL file for wr
 
 ### SQL Tools Section
 
-<img src="images/connections_column.png" style="zoom:70%;" />
+<img src="./images/connections_column.png" style="zoom:70%;" />
 
 The SQL Tools section displays different connection information. Each connection includes three subdirectories:
 
@@ -67,17 +67,17 @@ The SQL Tools section displays different connection information. Each connection
 
 For table-type objects, click the `magnifying glass` button on the right to view table data.
 
-<img src="images/show_table_records.png" style="zoom:50%;" />
+<img src="./images/show_table_records.png" style="zoom:50%;" />
 
 
 Click the `+` button to generate an insert statement.
 
-<img src="images/insert.png" style="zoom:50%;" />
+<img src="./images/insert.png" style="zoom:50%;" />
 
 
 In the script execution section, users can write scripts and then click `Run on active connection` to execute the script.
 
-<img src="images/run_script.png" style="zoom:50%;" />
+<img src="./images/run_script.png" style="zoom:50%;" />
 
 The results section on the right will display the results returned by the script calculation.
 
@@ -94,16 +94,16 @@ The results section is used to display the following:
 
     * **CONSOLE**: SQL terminal, outputs execution information. Typically, execution information includes details such as the dimensions, type, and data format of the returned object.
         
-        <img src="images/console.png" style="zoom:80%;" />
+        <img src="./images/console.png" style="zoom:80%;" />
 
     * **RE-RUN QUERY**: Re-executes the statement.
     * **EXPORT**: Exports execution results in JSON or CSV format.
 
-        <img src="images/export.png" style="zoom:80%;" />
+        <img src="./images/export.png" style="zoom:80%;" />
 
     * **OPEN**: Views execution results as a CSV or JSON file.
 
-        <img src="images/open.png" style="zoom:80%;" />
+        <img src="./images/open.png" style="zoom:80%;" />
 
 ### Query History Section
 

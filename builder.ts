@@ -68,7 +68,7 @@ export let builder = {
                     },
                     assets: {
                         productions: [
-                            'README.md', 'icons/', 'images/',
+                            'README.md', 'icons/', 
                             'connection.schema.json',
                             'ui.schema.json',
                             
@@ -156,13 +156,13 @@ export let builder = {
             
             categories: ['Programming Languages', 'Other', 'Linters'],
             keywords: ['dolphindb', 'DolphinDB', 'DataBase', 'database', 'Time Series', 'timeseries', 'Programing Language'],
-            homepage: 'https://github.com/dolphindb/vscode-extension/',
+            homepage: 'https://github.com/dolphindb/sqltools-dolphindb-driver/',
             bugs: {
-                url: 'https://github.com/dolphindb/vscode-extension/issues'
+                url: 'https://github.com/dolphindb/sqltools-dolphindb-driver/issues'
             },
             repository: {
                 type: 'git',
-                url: 'https://github.com/dolphindb/vscode-extension.git'
+                url: 'https://github.com/dolphindb/sqltools-dolphindb-driver.git'
             },
             
             activationEvents: [

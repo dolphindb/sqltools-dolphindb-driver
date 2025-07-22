@@ -71,7 +71,7 @@ export let builder = {
                             'README.md', 'icons/', 
                             'connection.schema.json',
                             'ui.schema.json',
-                            
+                            'LICENSE.txt',
                             // sqltools: 复制所需的资源
                             // '',
                             
@@ -153,7 +153,7 @@ export let builder = {
             },
             
             publisher: 'dolphindb',
-            
+            license: 'Apache-2.0',
             categories: ['Programming Languages', 'Other', 'Linters'],
             keywords: ['dolphindb', 'DolphinDB', 'DataBase', 'database', 'Time Series', 'timeseries', 'Programing Language'],
             homepage: 'https://github.com/dolphindb/sqltools-dolphindb-driver/',

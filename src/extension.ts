@@ -10,9 +10,9 @@ export const driver_aliases: IDriverAlias[] = [
 ]
 
 
-export const extension_id = 'dolphindb.dolphindb-vscode'
+export const extension_id = 'dolphindb.dolphindb-driver-for-sqltools'
 
-export const extension_name = 'DolphinDB SQLTools Driver'
+export const extension_name = 'DolphinDB Driver For SQLTools'
 
 
 export async function activate (ctx: ExtensionContext): Promise<IDriverExtensionApi> {

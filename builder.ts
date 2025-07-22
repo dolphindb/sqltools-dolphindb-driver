@@ -69,6 +69,8 @@ export let builder = {
                     assets: {
                         productions: [
                             'README.md', 'icons/', 'images/',
+                            'connection.schema.json',
+                            'ui.schema.json',
                             
                             // sqltools: 复制所需的资源
                             // '',
@@ -76,8 +78,8 @@ export let builder = {
                             ... ['zh', 'en'].map(language => 
                                 ({ src: `node_modules/dolphindb/docs.${language}.json`, out: `docs.${language}.json` })),
                                 
-                            'connection.schema.json',
-                            'ui.schema.json'
+                            // 'dolphindb.language-configuration.json',
+                            // 'dolphindb-python.language-configuration.json'
                         ],
                     },
                     externals: {
@@ -125,11 +127,11 @@ export let builder = {
         
         const package_json_ = {
             name,
-            displayName: 'SQLTools DolphinDB Driver',
+            displayName: 'DolphinDB Driver For SQLTools',
             
             type,
             
-            description: 'SQLTools driver for DolphinDB',
+            description: 'SQLTools DolphinDB Driver',
             
             version,
             
@@ -151,7 +153,7 @@ export let builder = {
             },
             
             publisher: 'dolphindb',
-            extensionDependencies: ['mtxr.sqltools'],
+            
             categories: ['Programming Languages', 'Other', 'Linters'],
             keywords: ['dolphindb', 'DolphinDB', 'DataBase', 'database', 'Time Series', 'timeseries', 'Programing Language'],
             homepage: 'https://github.com/dolphindb/vscode-extension/',
